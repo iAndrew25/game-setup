@@ -1,0 +1,21 @@
+{
+	"name": "basic-multiplayer-game",
+	"version": "0.1.0",
+	"description": "",
+	"scripts": {
+		"client": "npm run webpack",
+		"server": "nodemon server/server.js",
+		"start": "concurrently \"npm run client\" \"npm run server\"",
+		"webpack": "webpack -d --watch"
+	},
+	"license": "",
+	"dependencies": {
+		"express": "^4.16.3",
+		"ws": "^5.0.0"
+	},
+	"devDependencies": {
+		"concurrently": "^3.5.1",
+		"nodemon": "^1.17.4",
+		"webpack": "^3.0.0"
+	}
+}
